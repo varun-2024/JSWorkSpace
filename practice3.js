@@ -29,7 +29,7 @@ console.log(para); */
  
 
 //crete element
-let btn = document.createElement("button"); 
+/* let btn = document.createElement("button"); 
 btn.innerText="Click Me";
 div= document.querySelector(".hero");
 div.prepend(btn);
@@ -43,7 +43,7 @@ document.querySelector("h1").remove("h1");
 
 let newHeading = document.createElement("h1");
 newHeading.innerHTML = "<i>Hi I am Varun!</i>";
-document.querySelector(".head").prepend(newHeading);
+document.querySelector(".head").prepend(newHeading); */
 
 /* let div = document.querySelector(".hero"); */
 
@@ -59,7 +59,7 @@ document.querySelector(".head").prepend(newHeading);
         break;
     }
 }; */
-btn.onmouseover=(evt)=>{
+/* btn.onmouseover=(evt)=>{
     if (div.style.backgroundColor=="yellow"){
     console.log("Button was Clicked!!!");
     div.style.backgroundColor="red";
@@ -78,7 +78,7 @@ btn.onclick=(e)=>{
         console.log(e.type, "Button was Clicked!!!");
     }
 };
-
+ */
 
 /* let div = document.querySelector("div");
 console.log(div.getAttribute("class")); */
@@ -101,7 +101,8 @@ for (i of div) {
 /* console.log(div.nodeValue('box')); */
 
 /* -------------------------------------------------------- */
-
+/* 
 btn.addEventListener() => {
 
-}
+} */
+
