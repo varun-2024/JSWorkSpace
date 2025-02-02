@@ -26,7 +26,6 @@ class ToyotaCar {
     }
 }
 
-
 let fortuner = new ToyotaCar("Fortuner 4 x 4", 23468);
 fortuner.setBrand("Fortuner");
 fortuner.carAge(10);
@@ -53,6 +52,9 @@ class Child extends Parent {
 }
 
 let Obj = new Child(); */
+
+
+// Inheritance
 
 /* class Person {
     constructor() {
@@ -91,11 +93,14 @@ console.log(jane);
 jane.work(); */
 
 
-class Person {
+    // Inheritance, Super Keyword and Super with Arguments
+
+/* class Person {
     constructor(name) {
         console.log("Enter Parent Constructor");
         this.species = "Homo Sapeins";
         this.name = name;
+        console.log(name);
         console.log("Exit Parent Constructor");
     }    
     eat() {
@@ -111,8 +116,10 @@ class Person {
 class Engineer extends Person {
     constructor(name, branch) {
         console.log("Enter Child Constructor Engineer");
-        super(); // To invoke Parent Class Constructor
+        super(name); // To invoke Parent Class Constructor
         this.branch = branch;
+        super.work(); // Calling Work fuction in Parent Class
+        this.work();  // Calling Work function in Child Class
         console.log("Exit Child Constructor Engineer");
     }
     work() {
@@ -122,7 +129,7 @@ class Engineer extends Person {
 class Doctor extends Person {
     constructor(name, specialisation) {
         console.log("Enter Child Constructor Doctor");
-        super(); // To invoke Parent Class Constructor
+        super(name); // To invoke Parent Class Constructor
         this.specialisation = specialisation;
         console.log("Exit Child Constructor Doctor");
     }
@@ -136,3 +143,35 @@ console.log(john);
 john.work();
 console.log(jane);
 jane.work();
+ */
+
+        // Try Catch
+/* let a = 5;
+let b = 10;
+console.log("a = ", a);
+console.log("b = ", b);
+try {console.log("a + b = ", a + c); //Error 
+} catch(err) {
+console.log(err); //error
+} 
+console.log("a + b = ", a + b);
+console.log("a + b = ", a + b); */
+
+
+
+    // Asycronous - Timeout Function
+
+/* function hello() {
+    console.log("Hello");
+} */
+
+/* console.log("first comment");
+setTimeout(() => { console.log("Hello")}, 2000);
+console.log("Second comment"); */
+
+        // Callbacks
+
+/* function sum (a, b) {   console.log(a + b);  }
+function calculator (a, b, sumCallback) {  sumCallback(a,b);  }
+calculator (1,2, sum);
+calculator (1,2, (a,b) => { console.log(a+b)}); */
