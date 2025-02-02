@@ -220,8 +220,78 @@ getData(1, () => {
 }
  */
 
-/* let promise = new Promise((resolve, reject) => {
-    console.log("I am a Promise");
-    //resolve("Success");
-    reject("Some Error Occured");
-}) */
+/* const getPromise = () => {
+    return new Promise((resolve, reject) => {
+        console.log("I am a Promise");
+        resolve("Success");
+        //reject("Some Error Occured");
+    })
+}
+let promise = getPromise();
+promise.then((res) => {
+    console.log("Promise Resolved", res);
+});
+promise.catch((err) =>{
+    console.log("Promise Failed", err);
+}); */
+
+    // Promise Chains
+
+/* function asyncFunc() {
+    return new Promise((resolve, reject) => {
+setTimeout (() => {
+console.log("Some Data 1");
+resolve("Sucess");
+}, 3000);
+    });
+}
+function asyncFunc2() {
+    return new Promise((resolve, reject) => {
+setTimeout (() => {
+console.log("Some Data 2");
+resolve("Sucess");
+}, 3000);
+    });
+}
+// Way 1 to write this code
+console.log("Fetching Data 1");
+let p1= asyncFunc();
+p1.then((res) => {
+    console.log(res);
+    console.log("Fetching Data 2");
+    let p2= asyncFunc2();
+    p2.then((res) => {
+    console.log(res);
+});
+});
+// Way 2 to write above code
+console.log("Fetching Data 1");
+asyncFunc().then((res) => {
+    console.log(res);
+    console.log("Fetching Data 2");
+    asyncFunc2().then((res) => {
+    console.log(res);
+});
+}); */
+
+// Solving Callback Hell with Promise Chaining
+function getData(dataId, getNextData){
+    return new Promise((resolve, reject) =>{
+        setTimeout(()=> {
+            console.log("data ",dataId);
+            resolve ("Sucess");
+            if(getNextData){
+                getNextData();
+            }
+        }, 3000);
+    });
+}
+getData(1).then((res) => {
+    console.log(res);
+    getData(2).then(() => {
+        console.log(res);
+        getData(3).then(() => {
+            console.log(res);
+        })
+    })
+});
