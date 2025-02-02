@@ -175,3 +175,53 @@ console.log("Second comment"); */
 function calculator (a, b, sumCallback) {  sumCallback(a,b);  }
 calculator (1,2, sum);
 calculator (1,2, (a,b) => { console.log(a+b)}); */
+
+//Callback Hell
+
+/* function getData(dataId, getNextData){
+    setTimeout(()=> {
+        console.log("data ",dataId);
+        if (getNextData) {
+            getNextData();
+        } else{ console.log("Out of Data")}
+    }, 2000);
+}
+console.log("Getting data 1");
+getData(1, () => { 
+    console.log("Getting data 2");
+    getData(2, () => {
+        console.log("Getting data 3");
+        getData(3, () => {
+            console.log("Getting data 4");
+            getData(4);
+        });
+    })
+});
+ */
+
+
+// Promises
+/* let promise = new Promise((resolve, reject) => {
+    console.log("I am a Promise");
+    //resolve("Success");
+    reject("Some Error Occured");
+}) */
+
+/* function getData(dataId, getNextData){
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+        console.log("data ", dataId);
+        resolve("Sucess");
+        if (getNextData) {
+            getNextData();
+        }
+    }, 5000);
+});
+}
+ */
+
+/* let promise = new Promise((resolve, reject) => {
+    console.log("I am a Promise");
+    //resolve("Success");
+    reject("Some Error Occured");
+}) */
