@@ -274,15 +274,13 @@ asyncFunc().then((res) => {
 });
 }); */
 
-// Solving Callback Hell with Promise Chaining
-function getData(dataId, getNextData){
+
+/*     // Solving Callback Hell with Promise Chaining
+function getData(dataId){
     return new Promise((resolve, reject) =>{
         setTimeout(()=> {
             console.log("data ",dataId);
             resolve ("Sucess");
-            if(getNextData){
-                getNextData();
-            }
         }, 3000);
     });
 }
@@ -294,4 +292,127 @@ getData(1).then((res) => {
             console.log(res);
         })
     })
+}); */
+
+/*     // Another Way of Writing Above Code Solving Callback Hell with Promise Chaining
+function getData(dataId){
+    return new Promise((resolve, reject) =>{
+        setTimeout(()=> {
+            console.log("data ",dataId);
+            resolve ("Sucess");
+        }, 3000);
+    });
+}
+getData(1)
+    .then((res) => {
+    console.log("Sucess");
+    return getData(2);
+    })
+    .then((res) => {
+    console.log("Sucess");
+    return getData(3);
+    })
+    .then((res) => {
+    console.log(res);
+    }); */
+
+
+        // Async Await
+/* async function hello() {
+    console.log("Hello");
+} */
+
+/* function api() {
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Weather Data");
+        resolve (200);
+        }, 2000);        
+    })
+}
+async function getWeatherData(){
+    await api();
+    await api();
+    await api();
+} */
+
+
+// Answer to Callback Hell
+
+function getData(dataId){
+    return new Promise((resolve, reject) =>{
+        setTimeout(()=> {
+            console.log("data ",dataId);
+            resolve ("Sucess");
+            }, 2000);
+        });
+    }
+ 
+            // Async-Await
+    /*    async function getAllData() {
+    console.log("Getting Data 1...");
+    await getData(1);
+    console.log("Getting Data 2...");
+    await getData(2);
+    console.log("Getting Data 3...");
+    await getData(3);
+    console.log("Getting Data 4...");
+    await getData(4);
+}
+getAllData(); */
+
+            // Then & Catch Promoises
+/* getData(1)
+    .then((res) => {
+    console.log("Sucess");
+    console.log(res)
+    return getData(2);
+    })
+    .then((res) => {
+    console.log("Sucess");
+    return getData(3);
+    })
+    .then((res) => {
+    console.log(res);    
+    })
+    .then((res) => {
+    return getData(4);
+    }).then(() =>{
+    console.log("Sucess");
+    }); */
+
+                
+                // Promise Chaining
+    /* getData(1).then((res) => {
+        console.log(res);
+        getData(2).then(() => {
+            console.log(res);
+            getData(3).then(() => {
+                console.log(res);
+            })
+        })
+    }); */
+
+
+        //Callback Hell
+
+/* function getData(dataId, getNextData){
+    setTimeout(()=> {
+        console.log("data ",dataId);
+        if (getNextData) {
+            getNextData();
+        } else{ console.log("Out of Data")}
+    }, 2000);
+}
+console.log("Getting data 1");
+getData(1, () => { 
+    console.log("Getting data 2");
+    getData(2, () => {
+        console.log("Getting data 3");
+        getData(3, () => {
+            console.log("Getting data 4");
+            getData(4);
+        });
+    })
 });
+ */
