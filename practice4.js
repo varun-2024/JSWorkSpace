@@ -416,3 +416,59 @@ getData(1, () => {
     })
 });
  */
+
+/* // IIFE Function
+
+function getData(dataId){
+    return new Promise((resolve, reject) =>{
+        setTimeout(()=> {
+            console.log("data ",dataId);
+            resolve ("Sucess");
+            }, 2000);
+        });
+    }
+(async function () {
+console.log("Getting Data 1...");
+await getData(1);
+console.log("Getting Data 2...");
+await getData(2);
+console.log("Getting Data 3...");
+await getData(3);
+console.log("Getting Data 4...");
+await getData(4);
+})();
+ */
+
+/*         // Fetch API
+const URL = "https://dogapi.dog/api/v2/breeds";
+const fact = document.querySelector("#fact");
+const desc = document.querySelector("#desc");
+const btn = document.querySelector("#btn");
+// Using Async-Await
+const getBreeds = async () => {
+    console.log("Getting Data....")
+    let response = await fetch(URL);
+    console.log(response);
+    console.log(response.status);
+    let data = await response.json();
+    console.log(data);
+    console.log(data.data[0].attributes.name, data.data[0].attributes.description);
+    fact.innerText = data.data[0].attributes.name;
+    desc.innerText = data.data[0].attributes.description;
+}
+// Using Promise Chains
+function getBreeds() {
+fetch(URL)
+.then((response) =>{
+    console.log(response);
+    return response.json();
+})
+.then((data)=> {
+    console.log(data);
+    console.log(data.data[0].attributes.name);
+    console.log(data.data[0].attributes.description);
+    fact.innerText = data.data[0].attributes.name;
+    desc.innerText = data.data[0].attributes.description;
+});
+}
+btn.addEventListener("click", getBreeds); */
