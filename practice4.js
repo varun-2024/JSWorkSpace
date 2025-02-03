@@ -339,7 +339,7 @@ async function getWeatherData(){
 
 // Answer to Callback Hell
 
-function getData(dataId){
+/* function getData(dataId){
     return new Promise((resolve, reject) =>{
         setTimeout(()=> {
             console.log("data ",dataId);
@@ -349,7 +349,7 @@ function getData(dataId){
     }
  
             // Async-Await
-    /*    async function getAllData() {
+       async function getAllData() {
     console.log("Getting Data 1...");
     await getData(1);
     console.log("Getting Data 2...");
