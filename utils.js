@@ -146,7 +146,7 @@ console.log(button);
 console.log(output); */
 
 
-const addCustomer = fn => (...args) =>{
+/* const addCustomer = fn => (...args) =>{
     console.log(`Saving Customer Info...`);
     return fn(...args);
 }
@@ -160,4 +160,21 @@ let completeOrder = (...args) => {
 completeOrder = (processOrder(completeOrder));
 console.log(completeOrder);
 completeOrder = (addCustomer(completeOrder));
-completeOrder("1000");
+completeOrder("1000"); */
+
+
+const curry = (fn) => {
+    return curried = (...args) => {
+        console.log(fn.length);
+        if (fn.length !== args.length) {
+            return curried.bind(null, ...args);
+        }
+        return fn(...args);
+    };
+};
+
+const total = (x, y, z) => x + y + z;
+
+const curriedTotal = curry(total);
+
+console.log(curriedTotal(10)(20)(30)); // 6
