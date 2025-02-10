@@ -131,10 +131,7 @@ const curriedMultiply = (a) => (b) => multiply(a, b);
 console.log(curriedMultiply(4)(9));  */
 
 // Onclick Button Text Changes and Console Logs Button Clicked! using Curry function
-
-
-
-const updateElemText = id => content => 
+/* const updateElemText = id => content => 
     document.querySelector(`#${id}`).
     textContent = content;
 const button = document.getElementById('myButton');
@@ -146,6 +143,21 @@ button.onclick = function () {
     updateHeaderText('Button Clicked! Awesome');
 }
 console.log(button);
-console.log(output);
+console.log(output); */
 
 
+const addCustomer = fn => (...args) =>{
+    console.log(`Saving Customer Info...`);
+    return fn(...args);
+}
+const processOrder = fn => (...args) =>{
+    console.log(`Processing Order # ${args[0]}`);
+    return fn(...args);
+}
+let completeOrder = (...args) => {
+    console.log(`Order # ${[...args].toString()} completed!`);
+}
+completeOrder = (processOrder(completeOrder));
+console.log(completeOrder);
+completeOrder = (addCustomer(completeOrder));
+completeOrder("1000");
