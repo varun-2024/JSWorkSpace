@@ -145,4 +145,4 @@ function checkStockLevels(products) {
         }
     }
 }
-checkStockLevels(products); */
+checkStockLevels(products);  */
