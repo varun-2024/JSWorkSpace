@@ -98,9 +98,36 @@ console.log(properCase("random shit")); */
     if(w == newName){
     return `${w[0].toUpperCase()}${w.slice(1).toLowerCase()}`;
     } else {
-    return console.log("first name does not match");
+    return console.log("first name does not match"); 
      }
-  }, arr);
-  console.log(properCase(2, ["sachin", "raghav", "vipul", "dinesh", "chirag"])); */
+  }, arr); */
+  
 
 
+/* const button = document.getElementById('myButton');
+const output = document.getElementById('output');
+button.onclick = function () { 
+    output.textContent = 'Button clicked!';
+    console.log(output)
+}
+console.log(button);
+console.log(output); */
+
+//Curry Functions
+
+/* const buildSandwich = (ingredient1) => {
+    return (ingredient2) => {
+        return (ingredient3) => {        
+            return `A sandwich with ${ingredient1}, ${ingredient2}, and ${ingredient3}`;
+        }
+    }
+}
+const mySandwich = buildSandwich('bread')('cheese')('tomato');
+console.log(mySandwich);
+
+const buildSammy = ingred1 => ingred2 => ingred3 =>
+        `A Sammy with ${ingred1}, ${ingred2}, and ${ingred3}`;
+
+const mySammy = buildSammy('bread')('cheese')('tomato');
+
+console.log(mySammy); */
