@@ -409,3 +409,43 @@ console.log(talk.call(me, "es", false));
 console.log(talk.apply(me, ["en", false]));
  */
 
+/* ------------------------------------------------------------ */
+
+/* Constructor Functions and This Keyword */
+/* function Person (n) {
+    this.name = n;
+    this.talk = function() {
+        console.log(this);
+    }
+    console.log(this);
+    setTimeout( function(){  // This is a callback function, inside this the this keyword does not refer to the same object in callback, Inside this fucntion's scope any this keyword would refer to the Window object, to solve this we use either a .bind(this) method to bind the callback function to this object or use an arrow function instead
+console.log(this);
+    }.bind(this), 100);
+}
+const me = new Person("Varun");
+me.talk();
+
+function Person (n) {
+    this.name = n;
+    this.talk = function() { 
+        console.log(this);
+    }
+    console.log(this);
+    setTimeout( ()=> {  // This is a callback function, inside this the this keyword does not refer to the same object in callback, Inside this fucntion's scope any this keyword would refer to the Window object, to solve this we use either a .bind(this) method to bind the callback function to this object or use an arrow function instead
+console.log(this);
+    }, 100);
+}
+const me = new Person("Varun");
+me.talk(); */
+
+// Arrow Functions
+
+/* const sayHello = function firstName() {
+    console.log(arguments);
+}
+console.log(sayHello ("Varun", "Devloper", 35));
+
+const sayHello = () =>{
+    console.log(arguments);
+}
+console.log(sayHello ("Varun", "Devloper", 35)); */
