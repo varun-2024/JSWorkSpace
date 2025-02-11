@@ -449,3 +449,87 @@ const sayHello = () =>{
     console.log(arguments);
 }
 console.log(sayHello ("Varun", "Devloper", 35)); */
+
+// Callback Functions
+
+/* setTimeout(function () {console.log("Hello")}, 1000);
+setTimeout(() => {console.log("Hello")}, 1000);
+
+function sayHello() {console.log("Hello");}
+sayHello() => {console.log("Hello");} */
+
+
+// Arrow Function Simpler to Read
+/* const array = [1, 2, 3];
+array.map(function (i) {return <div>i</div>});
+array.map(i =><div>i</div>);
+// Arrow Function as  Longer Expression Harder to Read
+const elements = (data) =>
+    data.map(i => {
+        if (i===0) {
+            return `<h1>&{i}</h1>`
+        } else {
+            return `<h2>&{i}</h2>`
+        }
+        }); */
+
+        
+/* const names = ["Sina", "Sam", "Qoli", "Ben", "Zoe", "Quentin", "Ala", "Gabriel"];
+const longNames = names.filter(name => name[0]!=="Q")
+.filter(name => name.length >=5)
+.map(n => {
+    const el = document.createElement("p")
+    el.innerText = n;
+    return el
+});
+console.log(longNames); */
+
+
+
+/* const names = ["Samorai", "Hulkemania", "Sina", "Sam", "Qoli", "Ben", "Zoe", "Quentin", "Ala", "Gabriel"];
+const longNames = names.filter(name => name[0]!=="Q")
+.filter(name => name.length >=5)
+.map(n => {
+    const el = document.createElement("p")
+    el.innerText = n;
+    return el;
+});
+longNames.forEach(el => document.body.appendChild(el));
+console.log(longNames);  */
+
+
+
+/* const names = ["Samorai", "Hulkemania", "Sina", "Sam", "Qoli", "Ben", "Zoe", "Quentin", "Ala", "Gabriel"];
+const longNames = names.filter(name => name[0]!=="Q")
+.filter(name => name.length >=5)
+.map(n => {
+    const el = document.createElement("p")
+    el.innerText = n;
+    return el;
+});
+longNames.forEach(el => console.log(el.innerText)); */
+
+
+
+/* names.filter(name => name[0]!== "Q").map(name => name.length >= 5).forEach(name => console.log(name)); */
+
+
+/*     const  filterd = [];
+for (let i = 0; i<names.length; i++) {
+    if(names[i][0] !== "Q"){
+    filterd.push(names[i]);
+    }
+    }
+const longNames = [];
+for (let i = 0; i<filterd.length; i++) {
+    if(filterd[i].length >=5 ) {
+        longNames.push(filterd[i]);
+    }
+}
+const elements = [];
+for (let i = 0; i<longNames.length; i++) {
+ const el= document.createElement("p");
+ el.innerText = longNames[i];
+ elements.push(el);
+}
+console.log(names, filterd, longNames, elements); */
