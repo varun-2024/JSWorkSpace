@@ -473,7 +473,29 @@ const elements = (data) =>
         }
         }); */
 
-        
+
+//Higher Order Functions and Arrow Functions
+/*     const  filterd = [];
+for (let i = 0; i<names.length; i++) {
+    if(names[i][0] !== "Q"){
+    filterd.push(names[i]);
+    }
+    }
+const longNames = [];
+for (let i = 0; i<filterd.length; i++) {
+    if(filterd[i].length >=5 ) {
+        longNames.push(filterd[i]);
+    }
+}
+const elements = [];
+for (let i = 0; i<longNames.length; i++) {
+ const el= document.createElement("p");
+ el.innerText = longNames[i];
+ elements.push(el);
+}
+console.log(names, filterd, longNames, elements); */
+
+
 /* const names = ["Sina", "Sam", "Qoli", "Ben", "Zoe", "Quentin", "Ala", "Gabriel"];
 const longNames = names.filter(name => name[0]!=="Q")
 .filter(name => name.length >=5)
@@ -514,22 +536,5 @@ longNames.forEach(el => console.log(el.innerText)); */
 /* names.filter(name => name[0]!== "Q").map(name => name.length >= 5).forEach(name => console.log(name)); */
 
 
-/*     const  filterd = [];
-for (let i = 0; i<names.length; i++) {
-    if(names[i][0] !== "Q"){
-    filterd.push(names[i]);
-    }
-    }
-const longNames = [];
-for (let i = 0; i<filterd.length; i++) {
-    if(filterd[i].length >=5 ) {
-        longNames.push(filterd[i]);
-    }
-}
-const elements = [];
-for (let i = 0; i<longNames.length; i++) {
- const el= document.createElement("p");
- el.innerText = longNames[i];
- elements.push(el);
-}
-console.log(names, filterd, longNames, elements); */
+
+
