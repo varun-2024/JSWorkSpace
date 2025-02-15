@@ -536,5 +536,98 @@ longNames.forEach(el => console.log(el.innerText)); */
 /* names.filter(name => name[0]!== "Q").map(name => name.length >= 5).forEach(name => console.log(name)); */
 
 
+/* const input = document.getElementById('myInput');
+        const output = document.getElementById('output');
+      
+        input.onchange = function() {
+            output.innerHTML = `Value Changed to : ${event.value}`;
+        }
+ */
+
+
+        
+/*         
+//let arr = ["delhi","america", "south antarctica", "usa","South america"];
+//let arr = prompt("Enter some country name").split(",");
+let arr = ["India", "South Americas", "Russia", "United Kingdom", "Japan", "Spain", "Greece", "Italy"];
+function countryList(arr){
+    let name =0;
+    for(let i=0;i<arr.length;i++)
+    {
+        
+        if(arr[name].length<arr[i].length){
+            name=i;
+        }
+    }
+    console.log(arr[name]);
+}
+countryList(arr); */
+
+
+/* let arr = prompt("Enter some country names (comma-separated)").split(",").map(country => country.trim());
+
+console.log("Processed Array:", arr);  // Debugging step - Check the array after splitting
+
+function countryList(arr) {
+    if (arr.length === 0) {
+        console.log("No input provided.");
+        return;
+    }
+    let longestCountry = arr[0]; // Assume first country is longest
+    let longestCountry2 = []; // Debug
+    for (let i = 1; i < arr.length; i++) {  
+        console.log(`Comparing ${arr[i]} (${arr[i].length}) with ${longestCountry} (${longestCountry.length})`);  // Debug
+
+        if (arr[i].length > longestCountry.length) {  
+            console.log(arr[i]);
+            longestCountry2.unshift(arr[i]); 
+            console.log(longestCountry2); // Update if a longer name is found
+        } else if (arr[i].length == longestCountry.length) {
+            console.log("Found a tie between", arr[i], "and", longestCountry);
+            longestCountry2.unshift(arr[i]);   // Debug
+            console.log(longestCountry2);
+        }
+    }
+    console.log(`Longest country name: ${longestCountry2}`);
+}
+countryList(arr);
+
+
+
+
+
+
+
+function countryList(arr) {
+    if (arr.length === 0) {
+        console.log("No input provided.");
+        return;
+    }
+
+    let longestCountry = arr[0]; // Assume first country is longest
+    let longestCountry2 = [longestCountry]; // Start with the first country
+
+    for (let i = 1; i < arr.length; i++) {
+        console.log(`Comparing ${arr[i]} (${arr[i].length}) with ${longestCountry} (${longestCountry.length})`);  // Debug
+
+        if (arr[i].length > longestCountry.length) {
+            longestCountry = arr[i]; // Update the longest country
+            longestCountry2 = [arr[i]]; // Clear and add the new longest country
+            console.log(`New longest country found: ${arr[i]}`);
+        } else if (arr[i].length === longestCountry.length) {
+            console.log("Found a tie between", arr[i], "and", longestCountry);
+            longestCountry2.push(arr[i]); // Add to the list of longest countries
+        }
+    }
+
+    console.log(`Longest country name(s): ${longestCountry2.join(', ')}`);
+}
+
+countryList(arr); */
+
+/* let arr1= ["India", "South Americas", "Russia", "United Kingdom", "Japan", "Spain", "Greece", "Italy"];
+let arr2 = [];
+arr2.unshift(arr1[3]);
+console.log(arr2[0]); */
 
 
