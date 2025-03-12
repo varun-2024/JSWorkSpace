@@ -320,3 +320,25 @@ console.log(...newArr);
 };
 arr = [1, 2, 3, 4, 5];
 console.log(sum(...arr)); */
+
+//Arguments(Default Object) in Functions
+
+/* function min(a, b, c, d) {
+  console.log(arguments);
+}
+min(6, 9, 3, 1); */
+//Reduce can not be applied on Arguments hence we use Rest operator with ...args instead of Arguments
+/* function sum2(...args) {
+  return args.reduce((acc, val) => acc + val);
+}
+console.log(sum2(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+
+function sum(...args) {
+  for (let i = 0; i < args.length; i++) {
+    console.log(`You gave us : ${args[i]} as argument`);
+  }
+}
+ */
+/* -------------------------------------------------------- */
+
+//Destructuring
