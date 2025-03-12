@@ -630,4 +630,28 @@ let arr2 = [];
 arr2.unshift(arr1[3]);
 console.log(arr2[0]); */
 
+// Accessing Vaue of Object nested inside and Array
 
+/* let arr= [ 
+    {
+    name: "Sidhu",
+    age: 35,
+    Nationality: "Indian",
+    },
+    {
+    name: "Raman",
+    age: 47,
+    Nationality: "Srilankan",
+    },
+    {
+    name: "yoshi",
+    age: 23,
+    Nationality: "Japanese",
+    
+    },
+    ];
+        arr.forEach(function (obj)  {
+    for (let key in obj) {
+        console.log(key, obj[key]);
+    }
+    }); */
