@@ -1,5 +1,5 @@
 /* let tempNumber1 = 5;
-let tempNumber2=7
+let tempNumber2=7;
 let name = ' Varun '
 let judge = false;
 let a;
@@ -15,8 +15,7 @@ if  (judge) {
     }
  */
 
-
-  /*   const student = {
+/*   const student = {
         fullName: "Varun Talwar",
         marks: 50,
         age: 38,
@@ -39,12 +38,10 @@ if  (judge) {
     } else{ console.log(student.age, student.fullName)}
 
     console.log(student.fullName, student.age); */
-    
 
-    /* onclick.console.log(student["fullName"]); */
+/* onclick.console.log(student["fullName"]); */
 
-
-  /*   for(let i=0; i<=100; i++){
+/*   for(let i=0; i<=100; i++){
         if(i%2==0){
             console.log("i=", i, "Its is Even")
         }
@@ -67,8 +64,6 @@ if  (judge) {
                 }
             } */
 
-
-
 /* let gameNum=25;
 let userNum= prompt(" Guess the Game Number:");
 
@@ -78,12 +73,7 @@ while (userNum!= gameNum){
 
 console.log("Congratulations, you entered the right number!!!"); */
 
-
-
 /*--------------------------------------------------------------------------------------------*/
-
-
-
 
 /* const sales = [
     { item: "Laptop", quantity: 2, price: 800 },
@@ -156,7 +146,6 @@ checkStockLevels(products);  */
 console.log(properCase("random shit")); */
 //`${string[0].toUppercase()}${string.slice(1)}.toLowercase()}`;
 
-
 /* const properCase2 = (string) => {
     let s;
     let news;
@@ -166,7 +155,6 @@ console.log(properCase("random shit")); */
     }
 
 }; */
-
 
 /* const properCase2 = (string) => {
     let words = string.split(" ");
@@ -185,10 +173,7 @@ const properCase2 = (string) =>
 
 console.log(properCase2("random shit")); // Outputs: "Random Shit" */
 
-
-
-
-    // Proper Case Function
+// Proper Case Function
 /* const properCase = (string) => {
     return string.split(' ')
         .map(word => `${word[0].toUpperCase()}${word.slice(1).toLowerCase()}`)
@@ -196,7 +181,6 @@ console.log(properCase2("random shit")); // Outputs: "Random Shit" */
 };
 
 console.log(properCase("random shit")); */
-
 
 /* function map(f, a) {
     const result = new Array(a.length);
@@ -224,7 +208,6 @@ console.log(properCase("random shit")); */
     return result;
   } */
 
-
 /*   function properCase(f, a) {
     if (typeof f !== 'function') {
       throw new Error('First argument must be a function');
@@ -251,9 +234,6 @@ console.log(properCase("random shit")); */
     return console.log("first name does not match"); 
      }
   }, arr); */
-  
-
-
 
 //Curry Functions
 
@@ -295,7 +275,6 @@ button.onclick = function () {
 console.log(button);
 console.log(output); */
 
-
 /* const addCustomer = fn => (...args) =>{
     console.log(`Saving Customer Info...`);
     return fn(...args);
@@ -311,7 +290,6 @@ completeOrder = (processOrder(completeOrder));
 console.log(completeOrder);
 completeOrder = (addCustomer(completeOrder));
 completeOrder("1000"); */
-
 
 /* const curry = (fn) => {
     return curried = (...args) => {
@@ -366,7 +344,6 @@ const meTalk= talk.bind(me);
 console.log(talk.bind(me)()); // Outputs: "I am varun"
 console.log(talk.call(me)); */
 
-
 // Single Parameter
 /*function talk(lang) {
     if(lang==="en"){
@@ -381,7 +358,6 @@ const me = {
 const meTalk= talk.bind(me);
 console.log(talk.bind(me)()); // Outputs: "I am varun" 
 console.log(talk.call(me, "es"));*/
-
 
 // Multiple Parameter
 /* function talk(lang, isPolite) {
@@ -458,7 +434,6 @@ setTimeout(() => {console.log("Hello")}, 1000);
 function sayHello() {console.log("Hello");}
 sayHello() => {console.log("Hello");} */
 
-
 // Arrow Function Simpler to Read
 /* const array = [1, 2, 3];
 array.map(function (i) {return <div>i</div>});
@@ -472,7 +447,6 @@ const elements = (data) =>
             return `<h2>&{i}</h2>`
         }
         }); */
-
 
 //Higher Order Functions and Arrow Functions
 /*     const  filterd = [];
@@ -495,7 +469,6 @@ for (let i = 0; i<longNames.length; i++) {
 }
 console.log(names, filterd, longNames, elements); */
 
-
 /* const names = ["Sina", "Sam", "Qoli", "Ben", "Zoe", "Quentin", "Ala", "Gabriel"];
 const longNames = names.filter(name => name[0]!=="Q")
 .filter(name => name.length >=5)
@@ -505,8 +478,6 @@ const longNames = names.filter(name => name[0]!=="Q")
     return el
 });
 console.log(longNames); */
-
-
 
 /* const names = ["Samorai", "Hulkemania", "Sina", "Sam", "Qoli", "Ben", "Zoe", "Quentin", "Ala", "Gabriel"];
 const longNames = names.filter(name => name[0]!=="Q")
@@ -519,8 +490,6 @@ const longNames = names.filter(name => name[0]!=="Q")
 longNames.forEach(el => document.body.appendChild(el));
 console.log(longNames);  */
 
-
-
 /* const names = ["Samorai", "Hulkemania", "Sina", "Sam", "Qoli", "Ben", "Zoe", "Quentin", "Ala", "Gabriel"];
 const longNames = names.filter(name => name[0]!=="Q")
 .filter(name => name.length >=5)
@@ -531,10 +500,7 @@ const longNames = names.filter(name => name[0]!=="Q")
 });
 longNames.forEach(el => console.log(el.innerText)); */
 
-
-
 /* names.filter(name => name[0]!== "Q").map(name => name.length >= 5).forEach(name => console.log(name)); */
-
 
 /* const input = document.getElementById('myInput');
         const output = document.getElementById('output');
@@ -544,8 +510,6 @@ longNames.forEach(el => console.log(el.innerText)); */
         }
  */
 
-
-        
 /*         
 //let arr = ["delhi","america", "south antarctica", "usa","South america"];
 //let arr = prompt("Enter some country name").split(",");
@@ -562,7 +526,6 @@ function countryList(arr){
     console.log(arr[name]);
 }
 countryList(arr); */
-
 
 /* let arr = prompt("Enter some country names (comma-separated)").split(",").map(country => country.trim());
 

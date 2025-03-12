@@ -19,19 +19,18 @@ console.log(typeof markStudent); */
 /* markStudent[1]=44;
 console.log(markStudent); */
 
-
 /* for(let i=0; i<markStudent.length; i++)
     {
     console.log(markStudent[i]);
     }
  */
-    // For Of Loop
+// For Of Loop
 /* 
 for(let i of markStudent){
     console.log(i);
 } */
 
-    /* let cities = ["Delhi", "Mumbai", "Bangalore", "Pune", "Chennai", "Kolkata", "Nagpur", "Hydrabad"];
+/* let cities = ["Delhi", "Mumbai", "Bangalore", "Pune", "Chennai", "Kolkata", "Nagpur", "Hydrabad"];
     let stu ={
         stuNam: "Varun",
         stuOcc: "Student",
@@ -52,7 +51,7 @@ for(let i of markStudent){
        
      */
 
- /* let a= 123 + 123;
+/* let a= 123 + 123;
 
 console.log(typeof(a));
 console.log(a);
@@ -107,7 +106,7 @@ for(let i in student){
 for (let i=0; i<str.length; i++){
     console.log(`This is Charater at position ${i} : ${str[i]}`);
 } */
-    
+
 /*     let a= 5;
     let b=3;
     let c=`a + b = ${a+b}`;
@@ -118,7 +117,7 @@ for (let i=0; i<str.length; i++){
     console.log(c);
     console.log(a, b, c, d, obj.sum); */
 
-    /* let str= "hotter totter";
+/* let str= "hotter totter";
     console.log(str.length);
     console.log(str.replaceAll("t", "p"));
     console.log(str.charAt(5));
@@ -132,7 +131,6 @@ marks[i]=value;
 console.log(marks[i]);
 }
  */
-
 
 /* let a= "Immutable";
 console.log(a);
@@ -176,7 +174,6 @@ for(let i=0; i<arr.length-1; i++){
     arr[i]+=arr[i+1];
 }
 console.log(arr); */
-
 
 // ARROW FUNCTIONS
 
@@ -252,14 +249,10 @@ let calSquare = (val, idx, array) =>{
     return (`Square of ${val} is = ${val**2}` , ` at Index position ${idx}`, array);
 }
 result = arr.forEach(calSquare, i, arr);
-console.log(result); */   
-
-
+console.log(result); */
 
 // Working but stops working if i write calSquare()
-/* arr.forEach(calSquare(val, idx, array)); */  // Not Working
-
-
+/* arr.forEach(calSquare(val, idx, array)); */ // Not Working
 
 /* let arr = [2, 4, 6, 8, 10, 12];
 let i = prompt("Enter index Value=");
@@ -271,15 +264,12 @@ let calSquare = (val, idx, array) => {
 // Call for the specific index i
 calSquare(arr[i], i, arr); */
 
-
-
 //Map Method appies
 
 /* let arr = [1, 2, 3, 4, 5];
 let newArr = arr.map ( (val)=> {
 console.log(val*2);
 }); */
-
 
 //Filter Method  Filtern and Returns new array with values against applied condition
 
@@ -296,7 +286,6 @@ return val > 90;
 console.log(newArr);
  */
 
-
 // Reduce Method  Reduced answer to one result
 /* let arr = [1, 2, 3, 4, 5, 6, 7];  // Finding Largest Number
 const result = arr.reduce ( (previous, current) => {
@@ -311,3 +300,23 @@ console.log(result); */
 div.forEach((i) => console.log(i.getAttribute('class'))); */
 
 /* -------------------------------------------------------- */
+
+//Spread Operator
+/* let arr = [1, 2, 3, 4, 5];
+console.log(...arr);
+let arr2 = [6, 7, 8, 9];
+console.log(...arr2);
+let newArr = [...arr, ...arr2];
+console.log(...newArr);
+ */
+
+//Spread and Rest Operator
+/* let sum = (...args) => {
+  let total = 0;
+  for (let i of args) {
+    total += i;
+  }
+  return total;
+};
+arr = [1, 2, 3, 4, 5];
+console.log(sum(...arr)); */
