@@ -341,4 +341,61 @@ function sum(...args) {
  */
 /* -------------------------------------------------------- */
 
+//Hoisting
+
+/* const greet = function () {
+  console.log("Hello");
+};
+
+function greet() {
+  console.log("Hi");
+}
+greet(); */
+/* -------------------------------------------------------- */
+
+/* let greet = function () {
+  console.log("Hello");
+};
+
+greet();
+function greet() {
+  console.log("Hi");
+}
+greet(); */
+/* -------------------------------------------------------- */
+
+/* var greet = function () {
+  console.log("Hello");
+};
+greet();
+
+function greet() {
+  console.log("Hi");
+}
+greet(); */
+/* -------------------------------------------------------- */
+
+/* function greet() {
+  console.log("Hi");
+}
+
+greet();
+
+var greet = function () {
+  console.log("Hello");
+};
+greet(); */
+/* -------------------------------------------------------- */
+
+/* function greet() {
+  console.log("Hi");
+}
+
+greet();
+
+var greet = function () {
+  console.log("Hello");
+}; */
+/* -------------------------------------------------------- */
+
 //Destructuring
