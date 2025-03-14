@@ -429,4 +429,16 @@ console.log(newresult);
  */
 /* -------------------------------------------------------- */
 
+function counter() {
+  let count = 0;
+  return function () {
+    count++;
+    console.log(count);
+  };
+}
+
+counter()();
+let recall = counter();
+recall();
+recall();
 //Destructuring
