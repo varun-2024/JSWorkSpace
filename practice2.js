@@ -398,4 +398,35 @@ var greet = function () {
 }; */
 /* -------------------------------------------------------- */
 
+// Closure
+/* function outer() {
+  let count = 0;
+  return function inner() {
+    count++;
+    console.log(count);
+  };
+}
+
+const counter = outer();
+console.log(counter);
+counter();
+counter(); */
+/* -------------------------------------------------------- */
+// Creating what Map Method does
+/* let arr = [1, 2, 3, 4, 5];
+function vmap(arr, fn) {
+  newarr = [];
+  for (let i = 0; i < arr.length; i++) {
+    newarr.push(fn(arr[i]));
+  }
+  return newarr;
+}
+
+let newresult = vmap(arr, (val) => {
+  return val * 2;
+});
+console.log(newresult);
+ */
+/* -------------------------------------------------------- */
+
 //Destructuring
