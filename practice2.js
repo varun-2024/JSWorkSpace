@@ -558,3 +558,42 @@ console.log(sortedarr[1]); */
 console.log([...new Set(arr)].sort((a, b) => b - a)[1]); */
 
 /* -------------------------------------------------------- */
+//Array Reverse
+/* let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let arr2 = arr.reverse();
+console.log(arr2); */
+
+/* arr = [5, 6, 7, 8, 9, 1, 2, 3];
+arr2 = [];
+console.log(arr);
+for (let i = arr.length - 1; i >= 0; i--) {
+  arr2.push(arr[i]);
+}
+console.log(arr2); */
+/* -------------------------------------------------------- */
+// Number of Times a value is repeated and Most Repeated Value in an Array
+/* let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 10];
+let obj = {};
+let max = 0;
+let val = 0;
+arr.forEach((val) => {
+  //console.log(obj[val]);
+  obj[val] === undefined ? (obj[val] = 1) : obj[val]++;
+});
+console.log(obj);
+
+for (let i in obj) {
+  console.log(`Value ${i} is repeated ${obj[i]} times`);
+  if (obj[i] > max) {
+    max = obj[i];
+    val = i;
+  }
+}
+console.log(`${val} was the most repeated value that repeated ${max} times`); */
+
+/* -------------------------------------------------------- */
+//Sorting  with .sort() Method
+/* console.log([5, 10, 1, 25].sort());
+console.log([5, 10, 1, 25].sort((a, b) => a - b)); */
+
+/* -------------------------------------------------------- */
