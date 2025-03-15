@@ -494,8 +494,67 @@ console.log(obj);
 obj.name = "Varun";
 console.log(obj); */
 /* -------------------------------------------------------- */
+// String to Number
 /* str = "151";
 console.log(parseInt(str));
 console.log(parseFloat(str));
 console.log(Number(str));
 console.log(+str); */
+
+// Includes
+/* let str = "Hello World";
+console.log(str.includes("World"));
+str.indexOf("World") !== -1 ? console.log(true) : console.log(false);
+str.search("World") !== -1 ? console.log(true) : console.log(false); */
+
+/* -------------------------------------------------------- */
+//Reduce Method
+/* arr = [1, 2, 3, 4, 5];
+let sum = arr.reduce((acc, val) => {
+  //console.log(acc, val);
+  return acc + val;
+}, 0);
+
+console.log(sum); */
+/* -------------------------------------------------------- */
+/* let str = "JavaScript";
+for (i of str) {
+  console.log([...i]);
+} */
+
+/* -------------------------------------------------------- */
+// Remove Dyplication and find unique numbers
+/* let arr = [1, 1, 2, 2, 2, 2, 3, 4, 4, 5, 6, 7, 8, 8, 8, 9, 9, 10];
+let arr2 = [...new Set(arr)];
+console.log(arr2); */
+/* -------------------------------------------------------- */
+//Reduce Method for largest number
+/* let arr = [1, 2, 5, 3, 8, 5, 0, 6, 8, 45, 67, 344, 4, 835, 88, 434, 1001];
+let largest = arr.reduce((acc, val) => {
+  if (acc > val) {
+    return acc;
+  } else {
+    return val;
+  }
+}, 0);
+
+console.log(largest); */
+
+/* let arr = [3, 1, 5, 2, 4, 1, 2, 5, 3, 4];
+let unique = arr.filter((val, idx, array) => {
+  return array.indexOf(val) === idx;
+});
+console.log(unique); */
+/* -------------------------------------------------------- */
+// Second Largest Number
+/* let arr = [15, 2, 1, 3, 2, 13, 4, 5, 6, 7, 8, 9, 1, 2, 3];
+let uniquearr = [...new Set(arr)];
+console.log(uniquearr);
+let sortedarr = uniquearr.sort((a, b) => b - a);
+console.log(sortedarr[1]); */
+
+//Second Largest Number
+/* let arr = [15, 2, 1, 3, 2, 13, 4, 5, 6, 7, 8, 9, 1, 525, 600, 2, 3];
+console.log([...new Set(arr)].sort((a, b) => b - a)[1]); */
+
+/* -------------------------------------------------------- */
