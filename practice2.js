@@ -493,3 +493,9 @@ Object.freeze(obj);
 console.log(obj);
 obj.name = "Varun";
 console.log(obj); */
+/* -------------------------------------------------------- */
+/* str = "151";
+console.log(parseInt(str));
+console.log(parseFloat(str));
+console.log(Number(str));
+console.log(+str); */
