@@ -428,8 +428,8 @@ let newresult = vmap(arr, (val) => {
 console.log(newresult);
  */
 /* -------------------------------------------------------- */
-
-function counter() {
+//Closures
+/* function counter() {
   let count = 0;
   return function () {
     count++;
@@ -440,5 +440,56 @@ function counter() {
 counter()();
 let recall = counter();
 recall();
-recall();
-//Destructuring
+recall(); */
+/* -------------------------------------------------------- */
+
+/* console.log("Hello World");
+console.warn("Hello World");
+console.error("Hello World");
+console.info("Hello World");
+console.table({ name: "Varun", age: 38, city: "London" }); */
+/* -------------------------------------------------------- */
+
+/* let a = 10;
+let b = 20;
+let c;
+c = a;
+a = b;
+b = c;
+[a, b] = [b, a];
+a= a+b;
+b= a-b;
+a= a-b;
+console.log(a, b); 
+let a = 10;
+let b = 20;
+a = a + b;
+b = a - b;
+a = a - b;
+console.log(a, b);
+*/
+
+/* -------------------------------------------------------- */
+//Console Log Group
+/* console.groupCollapsed("Food Items");
+console.log("Pizza");
+console.groupCollapsed("Beverages");
+console.log("Coke");
+console.log("Pepsi");
+console.log("Miranda");
+console.groupEnd();
+console.log("Burger");
+console.log("Fish and Chips");
+console.groupEnd(); */
+/* -------------------------------------------------------- */
+
+//Object Freeze
+/* obj = {
+  name: "John",
+  age: 30,
+  city: "New York",
+};
+Object.freeze(obj);
+console.log(obj);
+obj.name = "Varun";
+console.log(obj); */
