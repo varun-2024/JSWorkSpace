@@ -597,3 +597,15 @@ console.log(`${val} was the most repeated value that repeated ${max} times`); */
 console.log([5, 10, 1, 25].sort((a, b) => a - b)); */
 
 /* -------------------------------------------------------- */
+// Merging Two Objects and Returning in one Object
+/* function mergeObjects(obj1, obj2) {
+  return { ...obj1, ...obj2 };
+}
+
+let obj1 = { name: "John", age: 30 };
+
+let obj2 = { city: "New York", job: "Developer" };
+
+console.log(mergeObjects(obj1, obj2)); */
+
+/* -------------------------------------------------------- */
