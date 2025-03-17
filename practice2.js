@@ -639,6 +639,6 @@ if (a + b <= c || b + c <= a || a + c <= b) {
 } else {
   let s = (a + b + c) / 2;
   let area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
-  console.log(area); */
-}
+  console.log(area);
+} */
 /* -------------------------------------------------------- */
