@@ -611,9 +611,9 @@ console.log(mergeObjects(obj1, obj2)); */
 /* -------------------------------------------------------- */
 
 //Post increment and Pre Increment and Decrement
-let a = 5;
+/* let a = 5;
 let b = a--;
-console.log(a, b);
+console.log(a, b); */
 
 // Turning True into number by Pre or Post increment
 /* let a = true;
