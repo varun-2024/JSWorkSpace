@@ -609,3 +609,8 @@ let obj2 = { city: "New York", job: "Developer" };
 console.log(mergeObjects(obj1, obj2)); */
 
 /* -------------------------------------------------------- */
+
+//Post increment and Pre Increment and Decrement
+let a = 5;
+let b = ++a;
+console.log(a, b);
