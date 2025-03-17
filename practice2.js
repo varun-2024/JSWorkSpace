@@ -626,3 +626,19 @@ console.log(a); */
 let r = 5;
 let t = 3;
 console.log(p * Math.pow(1 + r / 100, t) - p); */
+
+/* -------------------------------------------------------- */
+
+//Hero's Formula
+/* let a = 3;
+let b = 4;
+let c = 5;
+
+if (a + b <= c || b + c <= a || a + c <= b) {
+  console.log("Triangle is not possible");
+} else {
+  let s = (a + b + c) / 2;
+  let area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+  console.log(area); */
+}
+/* -------------------------------------------------------- */
