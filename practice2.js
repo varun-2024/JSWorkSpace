@@ -614,3 +614,10 @@ console.log(mergeObjects(obj1, obj2)); */
 let a = 5;
 let b = a--;
 console.log(a, b);
+
+// Turning True into number by Pre or Post increment
+/* let a = true;
+a++;
+console.log(a); */
+
+/* -------------------------------------------------------- */
