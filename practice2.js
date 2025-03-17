@@ -621,3 +621,8 @@ a++;
 console.log(a); */
 
 /* -------------------------------------------------------- */
+// Compound Interest
+/* let p = 1000;
+let r = 5;
+let t = 3;
+console.log(p * Math.pow(1 + r / 100, t) - p); */
