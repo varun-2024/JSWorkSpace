@@ -660,3 +660,61 @@ if (a + b <= c || b + c <= a || a + c <= b) {
 console.log(calculateFinalAmount(4000)); // Output: 8000 */
 
 /* -------------------------------------------------------- */
+// Electricity Bill Calculation
+
+/* function calculateElectricityBill(unit) {
+  // Write your logic here
+  if (unit > 400) {
+    return (100 * 4.2 + 100 * 6 + 200 * 8 + (unit - 400) * 13).toFixed(1);
+  } else if (unit >= 201 && unit <= 400) {
+    return (100 * 4.2 + 100 * 6 + (unit - 200) * 8).toFixed(1);
+  } else if (unit >= 101 && unit <= 200) {
+    return (100 * 4.2 + (unit - 100) * 6).toFixed(1);
+  } else return (unit * 4.2).toFixed(1);
+} */
+
+/* function calculateElectricityBill(unit) {
+  let payableAmount = 0;
+
+  // Units above 400 cost 13 per unit
+  if (unit > 400) {
+    payableAmount += (unit - 400) * 13;
+    unit = 400;
+  }
+  // Units between 201-400 cost 8 per unit
+  if (unit > 200) {
+    payableAmount += (unit - 200) * 8;
+    unit = 200;
+  }
+  // Units between 101-200 cost 6 per unit
+  if (unit > 100) {
+    payableAmount += (unit - 100) * 6;
+    unit = 100;
+  }
+  // Units 0-100 cost 4.2 per unit
+  payableAmount += unit * 4.2;
+  return payableAmount.toFixed(1);
+}
+console.log(calculateElectricityBill(300)); */
+
+/* function calcbill(units) {
+  let amount = 0;
+  if (units > 400) {
+    amount += (units - 400) * 13;
+    units = 400;
+  }
+  if (units > 200) {
+    amount += (units - 200) * 8;
+    units = 200;
+  }
+  if (units > 100) {
+    amount += (units - 100) * 6;
+    units = 100;
+  }
+  amount += units * 4.2;
+  return amount.toFixed(1);
+}
+
+console.log(calcbill(300));
+ */
+/* -------------------------------------------------------- */
