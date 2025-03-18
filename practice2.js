@@ -642,3 +642,21 @@ if (a + b <= c || b + c <= a || a + c <= b) {
   console.log(area);
 } */
 /* -------------------------------------------------------- */
+// Disscount Calcuation
+/* function calculateFinalAmount(amount) {
+  // Write your logic here
+  let dis = 0;
+  if (amount > 9000) {
+    dis = 20;
+  } else if (amount >= 7001 && amount <= 9000) {
+    dis = 10;
+  } else if (amount >= 5001 && amount <= 7000) {
+    dis = 5;
+  } else dis = 0;
+
+  return (amount = amount - (amount * dis) / 100);
+}
+
+console.log(calculateFinalAmount(4000)); // Output: 8000 */
+
+/* -------------------------------------------------------- */
