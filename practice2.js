@@ -718,3 +718,43 @@ console.log(calculateElectricityBill(300)); */
 console.log(calcbill(300));
  */
 /* -------------------------------------------------------- */
+// Saving Data to DB with Callbacks
+/* function savetoDB(data, sucess, failure) {
+  let internetSpeed = Math.floor(Math.random() * 10) + 1;
+
+  if (internetSpeed > 5) {
+    console.log(data);
+    sucess();
+  } else {
+    failure();
+  }
+}
+
+savetoDB(
+  "Charlie Chaplin",
+  () => {
+    console.log("Data saved successfully");
+    savetoDB(
+      "Password Data 2",
+      () => {
+        console.log("Data 2 Save Sucessfully");
+        savetoDB(
+          "Data 3 ",
+          () => {
+            console.log("Data 3 Save Sucessfully");
+          },
+          () => {
+            console.log("Failed to save data 3");
+          }
+        );
+      },
+      () => {
+        console.log("Failed to save data 2");
+      }
+    );
+  },
+  () => {
+    console.log("Failed to save data");
+  }
+); */
+/* -------------------------------------------------------- */
