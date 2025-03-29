@@ -792,3 +792,130 @@ savetoDB("Charlie Chaplin")
 
 /* -------------------------------------------------------- */
 // Saving Data to DB with Async Await
+/* async function greet() {
+  throw "404 Page not found";
+  return "Hello";
+}
+greet()
+  .then((result) => {
+    console.log("Promise Sucessful");
+    console.log(`Result was ${result}`);
+  })
+  .catch((error) => {
+    console.log("Error Occured", error);
+  }); */
+/* -------------------------------------------------------- */
+// Await Keyword
+/* function getNum() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      let num = Math.floor(Math.random() * 10) + 1;
+      console.log(num);
+      resolve();
+    }, 2000);
+  });
+}
+
+async function demo() {
+  await getNum();
+  await getNum();
+  await getNum();
+}
+demo();
+ */
+/* -------------------------------------------------------- */
+// Example 1: Fetching data with async/await
+
+/* async function fetchData(url) {
+  try {
+    console.log(`Fetching data from ${url}...`);
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    console.log("Data fetched successfully:", data);
+    return data; // Return the fetched data
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return null; // Return null or handle the error appropriately
+  }
+}
+
+async function main() {
+  const apiUrl = "https://jsonplaceholder.typicode.com/todos/1"; // Example API
+
+  const fetchedData = await fetchData(apiUrl);
+
+  if (fetchedData) {
+    console.log("Main function received data:", fetchedData);
+    // You can perform further operations with the fetched data here
+  } else {
+    console.log("Main function: Data fetching failed.");
+  }
+
+  console.log("Main function completed.");
+}
+
+main(); */
+
+// Example 2: Simulating asynchronous operations with setTimeout
+
+/* function delay(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function processTasks() {
+  console.log("Task 1 started...");
+  await delay(1000); // Simulate a 1-second delay
+  console.log("Task 1 completed.");
+
+  console.log("Task 2 started...");
+  await delay(1500); // Simulate a 1.5-second delay
+  console.log("Task 2 completed.");
+
+  console.log("Task 3 started...");
+  await delay(500); // Simulate a 0.5-second delay
+  console.log("Task 3 completed.");
+
+  console.log("All tasks completed.");
+}
+
+processTasks(); */
+
+// Example 3: Multiple promises using Promise.all()
+
+/* async function fetchMultiple(urls) {
+  try {
+    const promises = urls.map((url) =>
+      fetch(url).then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+    );
+
+    const results = await Promise.all(promises);
+    console.log("All data fetched", results);
+    return results;
+  } catch (error) {
+    console.error("Error fetching multiple:", error);
+    return null;
+  }
+}
+
+async function multiMain() {
+  const urls = [
+    "https://jsonplaceholder.typicode.com/todos/1",
+    "https://jsonplaceholder.typicode.com/todos/2",
+    "https://jsonplaceholder.typicode.com/todos/3",
+  ];
+
+  await fetchMultiple(urls);
+}
+multiMain(); */
+
+/* -------------------------------------------------------- */
