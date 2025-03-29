@@ -758,3 +758,37 @@ savetoDB(
   }
 ); */
 /* -------------------------------------------------------- */
+// Saving Data to DB with Promises
+/* function savetoDB(data) {
+  return new Promise((resolve, reject) => {
+    let internetSpeed = Math.floor(Math.random() * 10) + 1;
+    if (internetSpeed > 5) {
+      resolve("Data Saved was " + data);
+    } else {
+      reject("Failed to save d    ata");
+    }
+  });
+}
+
+savetoDB("Charlie Chaplin")
+  .then((result) => {
+    console.log("Data 1 saved successfully");
+    console.log(result);
+    return savetoDB("Data 2");
+  })
+  .then((result) => {
+    console.log("Data 2 saved successfully");
+    console.log(result);
+    return savetoDB("Data 3");
+  })
+  .then((result) => {
+    console.log("Data 3 saved successfully");
+    console.log(result);
+  })
+  .catch((error) => {
+    console.log("Failed to save data");
+    console.log(error);
+  }); */
+
+/* -------------------------------------------------------- */
+// Saving Data to DB with Async Await
