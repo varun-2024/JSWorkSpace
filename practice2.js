@@ -919,3 +919,54 @@ async function multiMain() {
 multiMain(); */
 
 /* -------------------------------------------------------- */
+/* let length = 4;
+function callback() {
+  console.log(this.length);
+}
+const object = {
+  length: 5,
+  method(callback) {
+    callback();
+  },
+};
+object.method(callback); */
+/* -------------------------------------------------------- */
+/* let length = 4;
+function callback() {
+  console.log(this.length);
+}
+const object = {
+  length: 5,
+  method(callback) {
+    callback.call(this); // Use call to set 'this' to the object
+  },
+};
+object.method(callback); */
+
+/* -------------------------------------------------------- */
+/* let length = 4;
+function callback() {
+  console.log(this.length);
+}
+const object = {
+  length: 5,
+  method(callback) {
+    const boundCallback = () => callback.call(this);
+    boundCallback();
+  },
+};
+object.method(callback); */
+/* -------------------------------------------------------- */
+/* let length = 4;
+function callback() {
+  console.log(this.length);
+}
+const object = {
+  length: 5,
+  method(callback) {
+    const boundCallback = callback.bind(this);
+    boundCallback();
+  },
+};
+object.method(callback); */
+/* -------------------------------------------------------- */
