@@ -1,5 +1,7 @@
-/* let tempNumber1 = 5;
-let tempNumber2=7;
+// Random test
+/* 
+let tempNumber1 = 5;
+let tempNumber2 = 7;
 let name = ' Varun '
 let judge = false;
 let a;
@@ -14,11 +16,13 @@ if  (judge) {
         console.log("Error in Working");
     }
  */
+/*--------------------------------------------------------------------------------------------*/
 
+// Objects
 /*   const student = {
         fullName: "Varun Talwar",
-        marks: 50,
-        age: 38,
+        marks: 80,
+        age: 30,
         college: "Apna College",
         pass: true
     };
@@ -46,6 +50,8 @@ if  (judge) {
             console.log("i=", i, "Its is Even")
         }
     }; */
+/*--------------------------------------------------------------------------------------------*/
+// Guess the Number Game
 /* 
     let gameNum=25;
     let userNum= prompt(" Guess the Game Number:");
@@ -74,7 +80,7 @@ while (userNum!= gameNum){
 console.log("Congratulations, you entered the right number!!!"); */
 
 /*--------------------------------------------------------------------------------------------*/
-
+// Courcera Question practice
 /* const sales = [
     { item: "Laptop", quantity: 2, price: 800 },
     { item: "Monitor", quantity: 1, price: 150 },
@@ -88,6 +94,8 @@ function calculateTotalSales(sales) {
     return total;
 }
 console.log("Total Sales Amount:", calculateTotalSales(sales)); */
+
+/*--------------------------------------------------------------------------------------------*/
 
 /* const orders = [
     { item: "Espresso", quantity: 2, price: 3.5 },
@@ -108,6 +116,8 @@ function generateReceipt(orders) {
 }
 generateReceipt(orders); */
 
+/*--------------------------------------------------------------------------------------------*/
+
 /* const passwords = ["Password123", "short", "ValidPass123", "too_long_password_example", "12345"];
 function validatePasswords(passwords) {
     const regex = /^[a-zA-Z0-9]{8,20}$/;
@@ -120,6 +130,8 @@ function validatePasswords(passwords) {
     }
 }
 validatePasswords(passwords); */
+
+/*--------------------------------------------------------------------------------------------*/
 
 /* const products = [
     { product: "Laptop", stock: 5 },
@@ -138,7 +150,10 @@ function checkStockLevels(products) {
 checkStockLevels(products);  */
 /* ----------------------------------------------------------- */
 
+/*--------------------------------------//Functions----------------------------------------------------*/
+
 // Proper Case Function
+
 /* const properCase = (string) =>  {
     return `${string[0].toUpperCase()}${string.slice(1).toLowerCase()}`;
 };
@@ -155,7 +170,7 @@ console.log(properCase("random shit")); */
     }
 
 }; */
-
+/*--------------------------------------------------------------------------------------------*/
 /* const properCase2 = (string) => {
     let words = string.split(" ");
     let properCaseWords = words.map(word => 
@@ -173,6 +188,8 @@ const properCase2 = (string) =>
 
 console.log(properCase2("random shit")); // Outputs: "Random Shit" */
 
+/*--------------------------------------------------------------------------------------------*/
+
 // Proper Case Function
 /* const properCase = (string) => {
     return string.split(' ')
@@ -182,6 +199,7 @@ console.log(properCase2("random shit")); // Outputs: "Random Shit" */
 
 console.log(properCase("random shit")); */
 
+/*--------------------------------------------------------------------------------------------*/
 /* function map(f, a) {
     const result = new Array(a.length);
     for (let i = 0; i < a.length; i++) {
@@ -235,6 +253,8 @@ console.log(properCase("random shit")); */
      }
   }, arr); */
 
+/*--------------------------------------------------------------------------------------------*/
+
 //Curry Functions
 
 /* const buildSandwich = (ingredient1) => {
@@ -254,11 +274,15 @@ const mySammy = buildSammy('bread')('cheese')('tomato');
 
 console.log(mySammy); */
 
+/*--------------------------------------------------------------------------------------------*/
+
 /* const multiply = (a, b) => a * b;
 
 const curriedMultiply = (a) => (b) => multiply(a, b);
 
 console.log(curriedMultiply(4)(9));  */
+
+/*----------------------------------DOM Manipuation---------------------------------------------*/
 
 // Onclick Button Text Changes and Console Logs Button Clicked! using Curry function
 /* const updateElemText = id => content => 
@@ -274,6 +298,7 @@ button.onclick = function () {
 }
 console.log(button);
 console.log(output); */
+/*----------------------------------Functions-------------------------------------------------------*/
 
 /* const addCustomer = fn => (...args) =>{
     console.log(`Saving Customer Info...`);
@@ -291,6 +316,8 @@ console.log(completeOrder);
 completeOrder = (addCustomer(completeOrder));
 completeOrder("1000"); */
 
+/*--------------------------------------------------------------------------------------------*/
+
 /* const curry = (fn) => {
     return curried = (...args) => {
         console.log(fn.length);
@@ -306,6 +333,8 @@ const total = (x, y, z) => x + y + z;
 const curriedTotal = curry(total);
 
 console.log(curriedTotal(10)(20)(30)); // 6 */
+
+/*------------------------------ This Key Word-------------------------------------------------*/
 
 // This Keyword
 
@@ -332,6 +361,7 @@ const you = {
 
 me.talk();
 you.talk();  */
+/*--------------------------------------------------------------------------------------------*/
 
 // Binding and This and Call
 /* function talk() {
@@ -343,6 +373,7 @@ const me = {
 const meTalk= talk.bind(me);
 console.log(talk.bind(me)()); // Outputs: "I am varun"
 console.log(talk.call(me)); */
+/*--------------------------------------------------------------------------------------------*/
 
 // Single Parameter
 /*function talk(lang) {
@@ -358,6 +389,8 @@ const me = {
 const meTalk= talk.bind(me);
 console.log(talk.bind(me)()); // Outputs: "I am varun" 
 console.log(talk.call(me, "es"));*/
+
+/*--------------------------------------------------------------------------------------------*/
 
 // Multiple Parameter
 /* function talk(lang, isPolite) {
@@ -414,6 +447,8 @@ console.log(this);
 const me = new Person("Varun");
 me.talk(); */
 
+/*--------------------------------------------------------------------------------------------*/
+
 // Arrow Functions
 
 /* const sayHello = function firstName() {
@@ -448,6 +483,8 @@ const elements = (data) =>
         }
         }); */
 
+/*--------------------------------------------------------------------------------------------*/
+
 //Higher Order Functions and Arrow Functions
 /*     const  filterd = [];
 for (let i = 0; i<names.length; i++) {
@@ -469,6 +506,8 @@ for (let i = 0; i<longNames.length; i++) {
 }
 console.log(names, filterd, longNames, elements); */
 
+/*--------------------------------------------------------------------------------------------*/
+
 /* const names = ["Sina", "Sam", "Qoli", "Ben", "Zoe", "Quentin", "Ala", "Gabriel"];
 const longNames = names.filter(name => name[0]!=="Q")
 .filter(name => name.length >=5)
@@ -478,6 +517,8 @@ const longNames = names.filter(name => name[0]!=="Q")
     return el
 });
 console.log(longNames); */
+
+/*--------------------------------------------------------------------------------------------*/
 
 /* const names = ["Samorai", "Hulkemania", "Sina", "Sam", "Qoli", "Ben", "Zoe", "Quentin", "Ala", "Gabriel"];
 const longNames = names.filter(name => name[0]!=="Q")
@@ -489,6 +530,8 @@ const longNames = names.filter(name => name[0]!=="Q")
 });
 longNames.forEach(el => document.body.appendChild(el));
 console.log(longNames);  */
+
+/*--------------------------------------------------------------------------------------------*/
 
 /* const names = ["Samorai", "Hulkemania", "Sina", "Sam", "Qoli", "Ben", "Zoe", "Quentin", "Ala", "Gabriel"];
 const longNames = names.filter(name => name[0]!=="Q")
@@ -527,6 +570,8 @@ function countryList(arr){
 }
 countryList(arr); */
 
+/*--------------------------------------------------------------------------------------------*/
+
 /* let arr = prompt("Enter some country names (comma-separated)").split(",").map(country => country.trim());
 
 console.log("Processed Array:", arr);  // Debugging step - Check the array after splitting
@@ -554,11 +599,6 @@ function countryList(arr) {
     console.log(`Longest country name: ${longestCountry2}`);
 }
 countryList(arr);
-
-
-
-
-
 
 
 function countryList(arr) {
@@ -593,6 +633,8 @@ let arr2 = [];
 arr2.unshift(arr1[3]);
 console.log(arr2[0]); */
 
+/*--------------------------------------------------------------------------------------------*/
+
 // Accessing Vaue of Object nested inside and Array
 
 /* let arr= [ 
@@ -618,3 +660,4 @@ console.log(arr2[0]); */
         console.log(key, obj[key]);
     }
     }); */
+/*--------------------------------------------------------------------------------------------*/

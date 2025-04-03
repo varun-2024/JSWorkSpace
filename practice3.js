@@ -1,4 +1,5 @@
-
+// Random Learning
+/*-------------------------------DOM Manipulation-----------------------------------------------*/
 /* console.log(p[0]);
 console.dir(p[0]);
 console.log(p[1]);
@@ -24,9 +25,6 @@ for(i of para) {
     i.setAttribute("class", "new");
 }
 console.log(para); */
-
-
- 
 
 //crete element
 /* let btn = document.createElement("button"); 
@@ -79,13 +77,11 @@ btn.onclick=(e)=>{
     }
 }; */
 
-
 /* let div = document.querySelector("div");
 console.log(div.getAttribute("class")); */
 
 /* -------------------------------------------------------- */
 /* document.querySelectorAll('div').forEach(div => console.log(div.getAttribute('class'))); */
-
 
 /* 
 let a=0;

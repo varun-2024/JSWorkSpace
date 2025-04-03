@@ -8,7 +8,7 @@
     stud4: 39,
     stud5: 89,
 } */
-
+/*--------------------------------------------------------------------------------------------*/
 //Array
 
 /* let markStudent= ["Ironman", "Thor", "Hulk","Shaktiman", "Spiderman", "Antman"];
@@ -24,6 +24,8 @@ console.log(markStudent); */
     console.log(markStudent[i]);
     }
  */
+
+/*--------------------------------------------------------------------------------------------*/
 // For Of Loop
 /* 
 for(let i of markStudent){
@@ -56,7 +58,7 @@ for(let i of markStudent){
 console.log(typeof(a));
 console.log(a);
  */
-
+/*--------------------------------------------------------------------------------------------*/
 /*
 console.log(name);
 var name="varun"; */
@@ -89,6 +91,7 @@ size++;
 console.log(size);
  */
 
+/*--------------------------------------------------------------------------------------------*/
 /* let student = {
     name: "Sharukh",
     age: 60,
@@ -175,6 +178,8 @@ for(let i=0; i<arr.length-1; i++){
 }
 console.log(arr); */
 
+/*--------------------------------------------------------------------------------------------*/
+
 // ARROW FUNCTIONS
 
 /* let calcResult = (a, b) => {
@@ -186,6 +191,8 @@ console.log(calcResult(9, 5));
 calcResult= 10;
 
 console.log(calcResult); */
+
+/*--------------------------------------------------------------------------------------------*/
 
 //Count Vowels Normal and Arrow Function
 
@@ -207,6 +214,8 @@ console.log(calcResult); */
 
 console.log(countVowels("CHARLIE CHAPLIN"));
 
+
+
 let countVow =(str) =>{
     let count = 0;
     for(const char of str){
@@ -225,6 +234,8 @@ let countVow =(str) =>{
 
 console.log(countVow("CHARLIE CHAPLIN")); */
 
+/*--------------------------------------------------------------------------------------------*/
+
 //For EACH loop Method
 
 /* let arr=["Pune", "Delhi", "Mumbai", "Lucknow"];
@@ -239,6 +250,8 @@ arr.forEach((val) =>{
     console.log(val**2);
 }); */
 
+/*--------------------------------------------------------------------------------------------*/
+
 // Calculate Square using For Each Arrow Function Second Method
 
 /* let arr = [2, 4, 6, 8, 10, 12];
@@ -250,6 +263,8 @@ let calSquare = (val, idx, array) =>{
 }
 result = arr.forEach(calSquare, i, arr);
 console.log(result); */
+
+/*--------------------------------------------------------------------------------------------*/
 
 // Working but stops working if i write calSquare()
 /* arr.forEach(calSquare(val, idx, array)); */ // Not Working
@@ -264,12 +279,16 @@ let calSquare = (val, idx, array) => {
 // Call for the specific index i
 calSquare(arr[i], i, arr); */
 
+/*--------------------------------------------------------------------------------------------*/
+
 //Map Method appies
 
 /* let arr = [1, 2, 3, 4, 5];
 let newArr = arr.map ( (val)=> {
 console.log(val*2);
 }); */
+
+/*--------------------------------------------------------------------------------------------*/
 
 //Filter Method  Filtern and Returns new array with values against applied condition
 
@@ -285,6 +304,8 @@ return val > 90;
 });
 console.log(newArr);
  */
+
+/*--------------------------------------------------------------------------------------------*/
 
 // Reduce Method  Reduced answer to one result
 /* let arr = [1, 2, 3, 4, 5, 6, 7];  // Finding Largest Number
@@ -320,6 +341,8 @@ console.log(...newArr);
 };
 arr = [1, 2, 3, 4, 5];
 console.log(sum(...arr)); */
+
+/*--------------------------------------------------------------------------------------------*/
 
 //Arguments(Default Object) in Functions
 
@@ -823,7 +846,7 @@ async function demo() {
 }
 demo();
  */
-/* -------------------------------------------------------- */
+/* -----------------Async Await Examples--------------------------------------- */
 // Example 1: Fetching data with async/await
 
 /* async function fetchData(url) {

@@ -9,7 +9,6 @@ console.log(Math.floor(5.9874)); // 2.718281828459045
 console.log(Math.ceil(5.9874)); // 
 console.log(Math.floor(Math.random() * 10 + 1)); // Random number between 0 and 100 */
 
-
 // Closures Example
 /* 
 function outerFunction() 
@@ -23,7 +22,6 @@ function outerFunction()
 }
 const closure = outerFunction();
 closure();// I am from outer function */
-
 
 /* function outerFunction(outerVariable){
     return function innerFunction(innerVariable){
@@ -43,3 +41,5 @@ console.log(outerFunction("outside")); */
     }
     setTimeout(log, 100);
 }; */
+
+/*--------------------------------------------------------------------------------------------*/

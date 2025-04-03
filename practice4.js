@@ -1,3 +1,5 @@
+/*--------------------------------Objects and Classes-----------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
 /* //Classes and Objects
 //Prototypes
 
@@ -40,6 +42,7 @@ console.log(lexus);
  */
 
 // Inheritance
+/*--------------------------------------------------------------------------------------------*/
 
 /* class Parent {
     hello() {
@@ -53,6 +56,7 @@ class Child extends Parent {
 
 let Obj = new Child(); */
 
+/*--------------------------------------------------------------------------------------------*/
 
 // Inheritance
 
@@ -92,60 +96,63 @@ john.work();
 console.log(jane);
 jane.work(); */
 
+/*----------------------------------Inheritance--------------------------------------------------*/
 
-    // Inheritance, Super Keyword and Super with Arguments
+// Inheritance, Super Keyword and Super with Arguments
 
 /* class Person {
-    constructor(name) {
-        console.log("Enter Parent Constructor");
-        this.species = "Homo Sapeins";
-        this.name = name;
-        console.log(name);
-        console.log("Exit Parent Constructor");
-    }    
-    eat() {
-        console.log("Eat");
-    }
-    sleep() {
-        console.log("Sleep");
-    }
-    work() {
-        console.log("Do Nothing");
-    }
+  constructor(name) {
+    console.log("Enter Parent Constructor");
+    this.species = "Homo Sapeins";
+    this.name = name;
+    console.log(this.name);
+    console.log("Exit Parent Constructor");
+  }
+  eat() {
+    console.log("Eat");
+  }
+  sleep() {
+    console.log("Sleep");
+  }
+  work() {
+    console.log("Do Nothing");
+  }
 }
 class Engineer extends Person {
-    constructor(name, branch) {
-        console.log("Enter Child Constructor Engineer");
-        super(name); // To invoke Parent Class Constructor
-        this.branch = branch;
-        super.work(); // Calling Work fuction in Parent Class
-        this.work();  // Calling Work function in Child Class
-        console.log("Exit Child Constructor Engineer");
-    }
-    work() {
-        console.log("Solve problems and Build Something");
-    }
+  constructor(name, branch) {
+    console.log("Enter Child Constructor Engineer");
+    super(name); // To invoke Parent Class Constructor
+    this.branch = branch;
+    console.log(this.branch);
+    super.work(); // Calling Work fuction in Parent Class
+    this.work(); // Calling Work function in Child Class
+    console.log("Exit Child Constructor Engineer");
+  }
+  work() {
+    console.log("Solve problems and Build Something");
+  }
 }
 class Doctor extends Person {
-    constructor(name, specialisation) {
-        console.log("Enter Child Constructor Doctor");
-        super(name); // To invoke Parent Class Constructor
-        this.specialisation = specialisation;
-        console.log("Exit Child Constructor Doctor");
-    }
-    work() {
+  constructor(name, specialisation) {
+    console.log("Enter Child Constructor Doctor");
+    super(name); // To invoke Parent Class Constructor
+    this.specialisation = specialisation;
+    console.log("Exit Child Constructor Doctor");
+  }
+  work() {
     console.log("Treat Patients");
-    }
+  }
 }
 let john = new Engineer("John", "Chemical");
 let jane = new Doctor("jane", "Cardiologist");
 console.log(john);
 john.work();
 console.log(jane);
-jane.work();
- */
+jane.work(); */
 
-        // Try Catch
+/*--------------------------------------------------------------------------------------------*/
+
+// Try Catch
 /* let a = 5;
 let b = 10;
 console.log("a = ", a);
@@ -157,9 +164,9 @@ console.log(err); //error
 console.log("a + b = ", a + b);
 console.log("a + b = ", a + b); */
 
+/*--------------------------------------------------------------------------------------------*/
 
-
-    // Asycronous - Timeout Function
+// Asycronous - Timeout Function
 
 /* function hello() {
     console.log("Hello");
@@ -169,7 +176,9 @@ console.log("a + b = ", a + b); */
 setTimeout(() => { console.log("Hello")}, 2000);
 console.log("Second comment"); */
 
-        // Callbacks
+/*--------------------------------------------------------------------------------------------*/
+
+// Callbacks
 
 /* function sum (a, b) {   console.log(a + b);  }
 function calculator (a, b, sumCallback) {  sumCallback(a,b);  }
@@ -198,8 +207,7 @@ getData(1, () => {
     })
 });
  */
-
-
+/*--------------------------------------------------------------------------------------------*/
 // Promises
 /* let promise = new Promise((resolve, reject) => {
     console.log("I am a Promise");
@@ -235,7 +243,8 @@ promise.catch((err) =>{
     console.log("Promise Failed", err);
 }); */
 
-    // Promise Chains
+/*--------------------------------------------------------------------------------------------*/
+// Promise Chains
 
 /* function asyncFunc() {
     return new Promise((resolve, reject) => {
@@ -274,6 +283,7 @@ asyncFunc().then((res) => {
 });
 }); */
 
+/*--------------------------------------------------------------------------------------------*/
 
 /*     // Solving Callback Hell with Promise Chaining
 function getData(dataId){
@@ -293,6 +303,7 @@ getData(1).then((res) => {
         })
     })
 }); */
+/*--------------------------------------------------------------------------------------------*/
 
 /*     // Another Way of Writing Above Code Solving Callback Hell with Promise Chaining
 function getData(dataId){
@@ -316,8 +327,7 @@ getData(1)
     console.log(res);
     }); */
 
-
-        // Async Await
+// Async Await
 /* async function hello() {
     console.log("Hello");
 } */
@@ -335,8 +345,7 @@ async function getWeatherData(){
     await api();
     await api();
 } */
-
-
+/*--------------------------------------------------------------------------------------------*/
 // Answer to Callback Hell
 
 /* function getData(dataId){
@@ -361,7 +370,7 @@ async function getWeatherData(){
 }
 getAllData(); */
 
-            // Then & Catch Promoises
+// Then & Catch Promoises
 /* getData(1)
     .then((res) => {
     console.log("Sucess");
@@ -380,10 +389,9 @@ getAllData(); */
     }).then(() =>{
     console.log("Sucess");
     }); */
-
-                
-                // Promise Chaining
-    /* getData(1).then((res) => {
+/*--------------------------------------------------------------------------------------------*/
+// Promise Chaining
+/* getData(1).then((res) => {
         console.log(res);
         getData(2).then(() => {
             console.log(res);
@@ -392,9 +400,8 @@ getAllData(); */
             })
         })
     }); */
-
-
-        //Callback Hell
+/*--------------------------------------------------------------------------------------------*/
+//Callback Hell
 
 /* function getData(dataId, getNextData){
     setTimeout(()=> {
@@ -416,7 +423,7 @@ getData(1, () => {
     })
 });
  */
-
+/*--------------------------------------------------------------------------------------------*/
 /* // IIFE Function
 
 function getData(dataId){
@@ -438,7 +445,7 @@ console.log("Getting Data 4...");
 await getData(4);
 })();
  */
-
+/*--------------------------------------------------------------------------------------------*/
 /*         // Fetch API
 const URL = "https://dogapi.dog/api/v2/breeds";
 const fact = document.querySelector("#fact");
@@ -472,3 +479,122 @@ fetch(URL)
 });
 }
 btn.addEventListener("click", getBreeds); */
+/*--------------------------------------------------------------------------------------------*/
+
+/* let arr = [1, 2, 3];
+arr.sayHello = () => {
+  console.log("Hello");
+};
+arr.push(4);
+
+console.log(arr); */
+/*---------------------------------Factory Functions--------------------------------------------*/
+//Factory Function (Creates copy of function for each object, takes more memory because creates copy for each object and is inneficient)
+/* function PersonMaker(name, age) {
+  const person = {
+    name,
+    age,
+    talk() {
+      console.log(
+        `Hello, my name is ${this.name} and I am ${this.age} years old.`
+      );
+    },
+  };
+  return person;
+}
+
+let p1 = PersonMaker("Sam", 23);
+let p2 = PersonMaker("Eva", 33);
+console.log(p1);
+p1.talk();
+p2.talk(); */
+/*-------------------------------------New Keyword--------------------------------------------*/
+// Constructor Function - Dosen't return anything and start with Capital Letter
+/* function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+Person.prototype.talk = function () {
+  console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+};
+let p1 = new Person("Sam", 23);
+let p2 = new Person("Eva", 33);
+
+p1.talk();
+p2.talk();
+console.log(p1, p2); */
+/*---------------------------------------Classes------------------------------------------------*/
+/* class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  talk() {
+    console.log(
+      `Hello, my name is ${this.name} and I am ${this.age} years old.`
+    );
+  }
+}
+
+let p1 = new Person("Sam", 23);
+let p2 = new Person("Eva", 33);
+
+p1.talk();
+p2.talk();
+
+console.log(p1, p2); */
+
+/*----------------------------------Inheritence--------------------------------------------------*/
+
+/* class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  talk() {
+    console.log(
+      `Hello, my name is ${this.name} and I am ${this.age} years old.`
+    );
+  }
+}
+
+let p1 = new Person("Yam", 13);
+
+p1.talk();
+class Student extends Person {
+  constructor(name, age, grade) {
+    super(name, age);
+    this.grade = grade;
+  }
+  talk() {
+    console.log(
+      `Hello, my name is ${this.name} and I am ${this.age} years old. I am in grade ${this.grade}.`
+    );
+  }
+}
+
+let s1 = new Student("Sam", 23, "9th");
+
+s1.talk();
+
+class Teacher extends Person {
+  constructor(name, age, subject) {
+    super(name, age);
+    this.subject = subject;
+  }
+  talk() {
+    console.log(
+      `Hello, my name is ${this.name} and I am ${this.age} years old. I teach ${this.subject}.`
+    );
+  }
+}
+
+let t1 = new Teacher("John", 45, "Math");
+
+t1.talk();
+ */
+/*--------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------*/
